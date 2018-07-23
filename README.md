@@ -3,4 +3,4 @@ A new iteration of the extendable virtual hotel site and management from Yifan L
 
 ## Supported emulators
 * Arcturus
-* Legacy (Holograph Emulator)
+* Holograph Emulator (Legacy)
