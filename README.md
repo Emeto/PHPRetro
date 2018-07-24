@@ -3,6 +3,7 @@ A new iteration of the extendable virtual hotel site and management from Yifan L
 
 ## Version
 At initial release of this project — 5.0.0
+
 From the latest known version — 4.1.0-unstable (August 1st, 2009)
 
 ## Supported emulators
