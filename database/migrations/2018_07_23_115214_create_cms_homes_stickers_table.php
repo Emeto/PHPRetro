@@ -15,6 +15,15 @@ class CreateCmsHomesStickersTable extends Migration
     {
         Schema::create('cms_homes_stickers', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
+            $table->float('x');
+            $table->float('y');
+            $table->float('z');
+            $table->text('data');
+            $table->tinyInteger('type');
+            $table->tinyInteger('subtype');
+            $table->text('skin');
+            $table->integer('group_id');
             $table->timestamps();
         });
     }

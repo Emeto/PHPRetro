@@ -15,6 +15,10 @@ class CreateCmsForumPostsTable extends Migration
     {
         Schema::create('cms_forum_posts', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('thread_id')->default(0);
+            $table->text('message');
+            $table->string('author');
+            $table->string('edit_author');
             $table->timestamps();
         });
     }

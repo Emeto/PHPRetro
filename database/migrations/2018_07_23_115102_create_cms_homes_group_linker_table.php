@@ -15,7 +15,9 @@ class CreateCmsHomesGroupLinkerTable extends Migration
     {
         Schema::create('cms_homes_group_linker', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->integer('user_id');
+            $table->integer('group_id');
+            $table->tinyInteger('active');
         });
     }
 

@@ -15,6 +15,11 @@ class CreateCmsHomesInventoryTable extends Migration
     {
         Schema::create('cms_homes_inventory', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
+            $table->tinyInteger('type');
+            $table->tinyInteger('subtype');
+            $table->text('data');
+            $table->integer('amount');
             $table->timestamps();
         });
     }

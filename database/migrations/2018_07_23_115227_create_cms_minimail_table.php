@@ -15,6 +15,11 @@ class CreateCmsMinimailTable extends Migration
     {
         Schema::create('cms_minimail', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
+            $table->integer('sender_id');
+            $table->string('subject');
+            $table->text('message');
+            $table->enum('read', [0, 1]);
             $table->timestamps();
         });
     }

@@ -15,6 +15,13 @@ class CreateCmsHomesCatalougeTable extends Migration
     {
         Schema::create('cms_homes_catalouge', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('name');
+            $table->tinyInteger('type');
+            $table->tinyInteger('subtype');
+            $table->text('data');
+            $table->integer('price');
+            $table->integer('amount')->default(1);
+            $table->text('category');
             $table->timestamps();
         });
     }

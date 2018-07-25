@@ -15,6 +15,10 @@ class CreateCmsPostsTable extends Migration
     {
         Schema::create('cms_posts', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('thread_id');
+            $table->string('poster');
+            $table->text('post');
+            $table->string('modify_by');
             $table->timestamps();
         });
     }
