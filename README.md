@@ -1,3 +1,5 @@
+[![StyleCI](https://github.styleci.io/repos/142006592/shield?branch=master)](https://github.styleci.io/repos/142006592)
+
 # PHPRetro
 A new iteration of the extendable virtual hotel site and management from Yifan Lu based off HoloCMS. This is a public rewrite of the initial project using the Laravel Framework
 
